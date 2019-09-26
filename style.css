@@ -1,0 +1,73 @@
+html {
+    text-align: center; 
+}
+
+body {
+    margin: 0; 
+}
+
+.menubar {
+    display: inline;
+}
+
+.header {
+    background-image: url("DSC01431.png");
+    background-size: 100%;
+    height: 90%;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.posts span {
+    font-size: 50px;
+
+}
+
+.blogpost1-header {
+    margin-top: 40px;
+    margin-bottom: 10px; 
+    
+    background-image: url("Cleanup-17.png");
+    background-size: 100%;
+    height: 20%;
+}
+
+.blogpost2-header {
+    margin-top: 40px;
+    margin-bottom: 10px; 
+    margin-left: 100px;
+    margin-right: 100px;
+    background-image: url("DSC00880.png");
+    background-size: 100%;
+    height: 20%;
+}
+
+.blogpost3-header {
+    margin-top: 40px;
+    margin-bottom: 10px; 
+    margin-left: 100px;
+    margin-right: 100px;
+    background-image: url("DSC01419.png");
+    background-size: 100%;
+    height: 20%;
+}
+
+.blogpost4-header {
+    margin-top: 40px;
+    margin-bottom: 10px; 
+    margin-left: 100px;
+    margin-right: 100px;
+    background-image: url("DSC00402.png");
+    background-size: 100%;
+    height: 20%;
+}
+
+.blogpost5-header {
+    margin-top: 40px;
+    margin-bottom: 10px; 
+    margin-left: 100px;
+    margin-right: 100px;
+    background-image: url("20180922_122209.png");
+    background-size: 100%;
+    height: 20%;
+}
