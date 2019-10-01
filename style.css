@@ -1,5 +1,9 @@
 html {
-    text-align: center; 
+   
+}
+
+*{
+    box-sizing: border-box;
 }
 
 body {
@@ -7,67 +11,153 @@ body {
 }
 
 .menubar {
-    display: inline;
+    
+    background-color: black;
+    text-align: right;
+    font-family: arial;
+    height: 60px;
+    
+}
+
+.logo {
+    float: left;
+}
+
+.menubar a {
+    line-height: 60px;
+    color: white; 
+    text-decoration: none;
+    font-size: 22px;
+    margin: 0 10px;
+    
+
+}
+
+.options .active {
+    background-color: #4CAF50;
+    margin-top: 30px;
 }
 
 .header {
-    background-image: url("DSC01431.png");
-    background-size: 100%;
-    height: 90%;
+    text-align: center;
+    /*background-image: url("DSC01431.png");*/
+    background-image: url("DSC00553.jpg");
+    background-size: 100% 700px;
+    height: 450px;
     font-size: 50px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.random_info {
+    text-align: center; 
+    margin: 10px 200px;
+    font-size: 20px;
+}
+
+.random_info h3{
+    font-size: 30px;
+}
+
+
+.posts h3{
+    text-align: center;
+    font-size: 40px;
+    font-family: Arial;
+    grid-area: 1/2/2/3
 }
 
 .posts span {
     font-size: 50px;
+}
 
+.posts p {
+    font-size: 25px;
+    margin: 0;
+}
+
+.posts {
+    text-align: center;
+    font-family: Arial;
+    margin-left: 120px;
+    margin-right: 120px;
+    display: grid;
+    grid-template-rows: 35px, 250px, 250px;
+    grid-template-columns: repeat(3, 1fr);  
+    grid-gap: 10px 30px;
+    
+}
+
+.posts .blogpost1, .blogpost2, .blogpost3, .blogpost4, .blogpost5, .blogpost6 {
+    
+    height: 300px;
+    
 }
 
 .blogpost1-header {
-    margin-top: 40px;
-    margin-bottom: 10px; 
+    height: 220px;
+    background-image: url("DSC00546.jpg");
+    background-size: 100% 220px;
     
-    background-image: url("Cleanup-17.png");
-    background-size: 100%;
-    height: 20%;
 }
 
+.blogpost1{
+   grid-area: 2/1/3/2;
+}
+
+
 .blogpost2-header {
-    margin-top: 40px;
-    margin-bottom: 10px; 
-    margin-left: 100px;
-    margin-right: 100px;
+    height: 220px;
     background-image: url("DSC00880.png");
-    background-size: 100%;
-    height: 20%;
+    background-size: 100% 220px;
+   
+}
+
+.blogpost2 {
+    grid-area: 2/2/3/3;
 }
 
 .blogpost3-header {
-    margin-top: 40px;
-    margin-bottom: 10px; 
-    margin-left: 100px;
-    margin-right: 100px;
+    height: 220px;
     background-image: url("DSC01419.png");
-    background-size: 100%;
-    height: 20%;
+    background-size: 100% 220px;
+    
 }
 
+.blogpost3 {
+    grid-area: 2/3/3/4;
+}
+
+
 .blogpost4-header {
-    margin-top: 40px;
-    margin-bottom: 10px; 
-    margin-left: 100px;
-    margin-right: 100px;
+    height: 220px;
     background-image: url("DSC00402.png");
-    background-size: 100%;
-    height: 20%;
+    background-size: 100% 220px;
+   
+}
+
+.blogpost4 {
+    grid-area: 3/1/4/2;
+    
 }
 
 .blogpost5-header {
-    margin-top: 40px;
-    margin-bottom: 10px; 
-    margin-left: 100px;
-    margin-right: 100px;
+    height: 220px;
     background-image: url("20180922_122209.png");
-    background-size: 100%;
-    height: 20%;
+    background-size: 100% 220px;
+  
+}
+
+.blogpost5 {
+    grid-area: 3/2/4/3;
+    
+}
+
+.blogpost6-header {
+    height: 220px;
+    background-image: url("GOPR2473_1529310539481_high.jpg");
+    background-size: 100% 220px;
+}
+
+.blogpost6 {
+    grid-area: 3/3/4/4;
 }
