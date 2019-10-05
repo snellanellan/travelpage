@@ -5,10 +5,14 @@ const app = express();
 const MongoClient = require('mongodb').MongoClient;
 let db;
 const com = 'comments';
+const path = require('path');
+
+
+app.set('view engine', 'ejs')
 
 
 //to get my css running:
-app.use(express.static(__dirname))
+app.use(express.static(path.join(__dirname, 'resources')))
 
 app.use(bodyParser.urlencoded({extended: true}))
 
@@ -21,12 +25,17 @@ app.listen(3000, function() {
 
 //to answer the get request from the browser we use the get method  
 app.get('/', (req, res) => {
-    //res.sendFile(__dirname+ '/index.html')
+    //res.sendFile(__dirname+ '/index.ejs')
     var cursor = db.collection(com).find().toArray(function(err, results){
         console.log(results)
         if(err){
             console.log(err)
     
+        } else {
+            res.render('index.ejs', {
+                'comments': results 
+            })
+            console.log('här')
         }
 
     })
