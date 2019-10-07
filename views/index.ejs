@@ -100,10 +100,10 @@
                 <button type="submit">Submit</button>
               </form>
               <ul class="comments">
-                    <% for(var i=0; i<com.length; i++) {%>
-                      <li class="quote">
-                        <span><%= com[i].name %></span>
-                        <span><%= com[i].comment %></span>
+                    <% for(var i=0; i<comments.length; i++) {%>
+                      <li class="comments">
+                        <span><%= comments[i].name %></span>
+                        <span><%= comments[i].comment %></span>
                       </li>
                     <% } %>
                     </ul>

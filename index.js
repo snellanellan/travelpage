@@ -3,6 +3,8 @@ const express = require('express');
 const bodyParser= require('body-parser');
 const app = express();
 const MongoClient = require('mongodb').MongoClient;
+const url = 'mongodb://127.0.0.1:27017';
+const dbName = 'Cluster0';
 let db;
 const com = 'comments';
 const path = require('path');
@@ -51,6 +53,25 @@ app.post('/comments', (req, res) => {
 })
 
 
+MongoClient.connect(url, { useNewUrlParser: true }, (err, client) => {
+    if (err) return console.log(err)
+  
+    // Storing a reference to the database so you can use it later
+    db = client.db(dbName)
+    console.log(`Connected MongoDB: ${url}`)
+    console.log(`Database: ${dbName}`)
+    app.listen(3000, () => {
+        console.log("lyssnar på port 3000");
+        
+    })
+    
+  })
+
+
+
+
+
+/*
 
 MongoClient.connect('mongodb+srv://nellantestar:karamell1@cluster0-o6sra.mongodb.net/admin?retryWrites=true&w=majority', (err, database) => {
     if(err){
@@ -62,4 +83,4 @@ MongoClient.connect('mongodb+srv://nellantestar:karamell1@cluster0-o6sra.mongodb
             
         });
     };
-})
+})*/
